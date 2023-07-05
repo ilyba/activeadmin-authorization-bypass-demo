@@ -70,3 +70,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "activeadmin", "~> 2.14"
+
+gem "devise", "~> 4.9"
+
+gem "cancancan", "~> 3.5"
