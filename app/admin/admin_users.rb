@@ -1,6 +1,14 @@
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirmation
 
+  before_action :set_admin_user
+
+  controller do
+    def set_admin_user
+      @admin_user = AdminUser.find(params[:id])
+    end
+  end
+
   index do
     selectable_column
     id_column
